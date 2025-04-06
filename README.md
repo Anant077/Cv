@@ -1,10 +1,13 @@
 Cv Ta-2
 
 Implemented 3 algorithms names are - Harris Corner Detection , Shi-Tomasi corners and Blob Detectors.
-Theory - Harris Corner Detector identifies corners by detecting areas with significant intensity changes in both directions using image gradients.
-         It's fast and detects many corners,but may pick up unstable or noisy points. Shi-Tomasi Corner Detector improves on Harris by using the 
-         minimum eigenvalue method, making it more stable and reliable for tracking,though it detects fewer points and is slightly slower.
-         In contrast, the Blob Detector (SimpleBlobDetector) focuses on finding distinct blob-like regions based on shape and
-         brightness properties like area and circularity—ideal for detecting round objects like coins or cells, but not suited for sharp edges or corners.
+
+
+1.Harris Corner Detector: Detects corners using intensity gradients; fast but can be noisy.
+2.Shi-Tomasi Corner Detector: Improved Harris method using eigenvalues; more stable and good for tracking.
+3.Blob Detector: Finds round or region-like features based on area and shape; great for spotting blobs, not corners.
 
 Uploded original image and rest 3 images
+Conclusion - If you're doing motion tracking, matching, or need corner reliability, go with Shi-Tomasi.
+If you're detecting circular shapes, use Blob Detector.
+If you want quick and basic corner detection, Harris is fine.
